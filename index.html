@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en,Nepali">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAJILO YATRA.SMARTTREK - Discover Nepal's Wonders</title>
+    <style>
+        /* CSS Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        
+        nav {
+            background-color: #2c3e50;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: #f39c12;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        section {
+            padding: 50px 0;
+        }
+        
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #2c3e50;
+            font-size: 2rem;
+        }
+        
+        .about {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+        
+        .developer {
+            text-align: center;
+            margin: 30px 0;
+            font-style: italic;
+            color: #7f8c8d;
+        }
+        
+        .destinations {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .destination-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .destination-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .destination-img {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .destination-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .destination-card:hover .destination-img img {
+            transform: scale(1.1);
+        }
+        
+        .destination-info {
+            padding: 20px;
+        }
+        
+        .destination-info h3 {
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 15px;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #c0392b;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">SmartTrekNepal</div>
+        <div class="tagline">Discover the Himalayan Wonder</div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <section id="home">
+            <div class="about">
+                <h2>Welcome to SmartTrekNepal</h2>
+                <p>SmartTrekNepal is your premier guide to exploring the breathtaking landscapes and rich cultural heritage of Nepal. From the towering peaks of the Himalayas to the lush jungles of the Terai, we provide smart solutions for modern travelers seeking authentic experiences in this magnificent country.</p>
+                <p>Our platform combines traditional Nepali hospitality with cutting-edge technology to make your journey seamless, safe, and unforgettable.</p>
+            </div>
+            
+            <div class="developer">
+                <p>Website developed by: <strong>Diwash Dhungana</strong></p>
+            </div>
+        </section>
+        
+        <section id="destinations">
+            <h2>Popular Tourist Destinations in Nepal</h2>
+            
+            <div class="destinations">
+                <!-- Destination 1 -->
+                <div class="destination-card">
+                    <div class="destination-img">
+                        <img src="https://images.unsplash.com/photo-1580801213989-5d85d7b30235?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Mount Everest">
+                    </div>
+                    <div class="destination-info">
+                        <h3>Mount Everest</h3>
+                        <p>The world's highest peak at 8,848 meters, Everest is the ultimate destination for trekkers and mountaineers. The Everest Base Camp trek offers stunning views and a chance to experience Sherpa culture.</p>
+                        <a href="#" class="btn">Explore</a>
+                    </div>
+                </div>
+                
+                <!-- Destination 2 -->
+                <div class="destination-card">
+                    <div class="destination-img">
+                        <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Pokhara">
+                    </div>
+                    <div class="destination-info">
+                        <h3>Pokhara</h3>
+                        <p>Nepal's second largest city, known for its stunning lakes and panoramic views of the Annapurna mountain range. Popular for paragliding, boating, and as a gateway to the Annapurna Circuit trek.</p>
+                        <a href="#" class="btn">Explore</a>
+                    </div>
+                </div>
+                
+                <!-- Destination 3 -->
+                <div class="destination-card">
+                    <div class="destination-img">
+                        <img src="https://images.unsplash.com/photo-1564501049551-ec8f1e8a1ad0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Kathmandu">
+                    </div>
+                    <div class="destination-info">
+                        <h3>Kathmandu Valley</h3>
+                        <p>The cultural heart of Nepal, home to seven UNESCO World Heritage Sites including Swayambhunath (Monkey Temple), Pashupatinath, and Durbar Squares. A vibrant mix of ancient traditions and modern life.</p>
+                        <a href="#" class="btn">Explore</a>
+                    </div>
+                </div>
+                
+                <!-- Destination 4 -->
+                <div class="destination-card">
+                    <div class="destination-img">
+                        <img src="https://images.unsplash.com/photo-1581601386704-88138dc9f4fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Chitwan">
+                    </div>
+                    <div class="destination-info">
+                        <h3>Chitwan National Park</h3>
+                        <p>Nepal's first national park and a UNESCO World Heritage Site. Famous for jungle safaris where you can spot rhinos, elephants, and if lucky, the Bengal tiger.</p>
+                        <a href="#" class="btn">Explore</a>
+                    </div>
+                </div>
+                
+                <!-- Destination 5 -->
+                <div class="destination-card">
+                    <div class="destination-img">
+                        <img src="https://images.unsplash.com/photo-1600209149644-5d878df67b8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Lumbini">
+                    </div>
+                    <div class="destination-info">
+                        <h3>Lumbini</h3>
+                        <p>The birthplace of Lord Buddha and a UNESCO World Heritage Site. A sacred pilgrimage site with monasteries from various Buddhist countries and the ancient Mayadevi Temple.</p>
+                        <a href="#" class="btn">Explore</a>
+                    </div>
+                </div>
+                
+                <!-- Destination 6 -->
+                <div class="destination-card">
+                    <div class="destination-img">
+                        <img src="https://images.unsplash.com/photo-1600209149433-28e227d1fe10?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Annapurna">
+                    </div>
+                    <div class="destination-info">
+                        <h3>Annapurna Circuit</h3>
+                        <p>One of the world's classic treks, circling the Annapurna Massif. The route passes through diverse landscapes from subtropical valleys to high mountain deserts.</p>
+                        <a href="#" class="btn">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="about">
+                <p>Ready to plan your Nepali adventure? Contact our team of travel experts to create your perfect itinerary.</p>
+                <p>Email: diwashdhungana123@gmail.com</p>
+                <p>Phone: +977 9744231797</p>
+                <p>Kathmandu, Nepal</p>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025SmartTrekNepal. Developed by Diwash Dhungana. All rights reserved.</p>
+    </footer>
+</body>
+</html>
